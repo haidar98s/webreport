@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Pangong - Responsive Bootstrap 4 Admin Dashboard Template
+Author: Hencework
+Contact: https://hencework.ticksy.com/
+License: You must have a valid license purchased only from themeforest to legally use the template for your project.
+-->
+<html lang="en">
+
+
+<!-- Mirrored from hencework.com/theme/pangong/modern/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Dec 2018 07:22:31 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Web Report</title>
+    <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- Morris Charts CSS -->
+    <link href="vendors/morris.js/morris.css" rel="stylesheet" type="text/css" />
+	
+    <!-- Toggles CSS -->
+    <link href="vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
+    <link href="vendors/jquery-toggles/css/themes/toggles-light.css" rel="stylesheet" type="text/css">
+	
+	<!-- Toastr CSS -->
+    <link href="vendors/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+	<link href="custom/css/style.css" rel="stylesheet" type="text/css">
+	<link href="custom/css/ppob.css" rel="stylesheet" type="text/css">
+	<link href="custom/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="custom/datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+    <link href="custom/datepicker/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-it">
+        <div class="loader-pendulums"></div>
+    </div>
+    <!-- /Preloader -->
+	
+	<!-- HK Wrapper -->
+	<div class="hk-wrapper hk-horizontal-nav">
+
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
+            <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="menu"></i></span></a>
+            <a class="navbar-brand" href="#">
+                <img class="brand-img d-inline-block" src="images/fm_web_report.png" alt="brand" />
+            </a>
+            <ul class="navbar-nav hk-navbar-content">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary">
+                        sisa saldo <span class="badge">Rp. 500.000</span>
+                    </button> 
+                </li>
+            </ul>
+        </nav>
+        <!-- /Top Navbar -->
+
+        <!--Horizontal Nav-->
+		<nav class="hk-nav hk-nav-dark">
+			<a href="javascript:void(0);" id="hk_nav_close" class="hk-nav-close"><span class="feather-icon"><i data-feather="x"></i></span></a>
+			<div class="nicescroll-bar">
+				<div class="navbar-nav-wrap">
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item">
+							<a class="nav-link link-with-badge" href="index.html">
+								<span class="feather-icon"><i data-feather="archive"></i></span>
+								<span class="nav-link-text">Dashboard</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-with-badge" href="ppob.html">
+								<span class="feather-icon"><i data-feather="server"></i></span>
+								<span class="nav-link-text">Beli Bayar</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-with-badge" href="login.html">
+								<span class="feather-icon"><i data-feather="power"></i></span>
+								<span class="nav-link-text">Keluar</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <div id="hk_nav_backdrop" class="hk-nav-backdrop"></div>
+        <!--/Horizontal Nav-->
+        <div class="hk-pg-wrapper">
+			<!-- Container -->
+            <div class="container">
+                <!-- Title -->
+                <div class="hk-pg-header mt-100">
+					<div>
+						<h2 class="hk-pg-title font-weight-600">Laporan Penjualan</h2>
+					</div>
+					<div id="sandbox-container">
+						<div class="input-append date">
+							<input type="text" class="form-control" required="" placeholder="Tanggal Berangkat"><span class="add-on icon-inside"><i class="fa fa-calendar"></i></span>
+						</div>
+					</div>
+				</div>
+                <!-- /Title -->
+
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hk-row">
+							<div class="col-md-4 col-sm-6">
+								<div class="card card-sm">
+									<div class="card-body">
+                                        <span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">Penjualan Hari Ini</span>
+                                        <hr>
+										<div class="d-flex align-items-center justify-content-between position-relative mb-10">
+											<div>
+												<span class="d-block display-7 font-weight-400 text-dark">Total Penjualan</span>
+											</div>
+											<div class="position-absolute r-0">
+                                                <span class="d-block display-7 font-weight-400 text-dark">Rp. 15.000</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between position-relative mb-20">
+                                                <div>
+                                                    <span class="d-block display-7 font-weight-400 text-dark">Total Pendapatan</span>
+                                                </div>
+                                                <div class="position-absolute r-0">
+                                                    <span class="d-block display-7 font-weight-400 text-dark">Rp. 12.000</span>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">Cetak Laporan</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="card card-sm">
+									<div class="card-body">
+										<span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">Penjualan Bulan Ini</span>
+										<hr>
+										<div class="d-flex align-items-center justify-content-between position-relative mb-10">
+											<div>
+												<span class="d-block display-7 font-weight-400 text-dark">Total Penjualan</span>
+											</div>
+											<div class="position-absolute r-0">
+                                                <span class="d-block display-7 font-weight-400 text-dark">Rp. 15.000</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between position-relative mb-20">
+                                                <div>
+                                                    <span class="d-block display-7 font-weight-400 text-dark">Total Pendapatan</span>
+                                                </div>
+                                                <div class="position-absolute r-0">
+                                                    <span class="d-block display-7 font-weight-400 text-dark">Rp. 12.000</span>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">Cetak Laporan</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="card card-sm">
+									<div class="card-body">
+										<span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">Penjualan Tahun Ini</span>
+										<hr>
+										<div class="d-flex align-items-center justify-content-between position-relative mb-10">
+											<div>
+												<span class="d-block display-7 font-weight-400 text-dark">Total Penjualan</span>
+											</div>
+											<div class="position-absolute r-0">
+                                                <span class="d-block display-7 font-weight-400 text-dark">Rp. 15.000</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between position-relative mb-20">
+                                            <div>
+                                                <span class="d-block display-7 font-weight-400 text-dark">Total Pendapatan</span>
+                                            </div>
+                                            <div class="position-absolute r-0">
+                                                <span class="d-block display-7 font-weight-400 text-dark">Rp. 12.000</span>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">Cetak Laporan</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hk-row">
+							<div class="col-lg-12">
+								<div class="card card-refresh">
+									<div class="refresh-container">
+										<div class="loader-pendulums"></div>
+									</div>
+									<h6 class="card-header card-header-action">
+										Traffic Pendapatan
+										<div class="d-flex align-items-center card-action-wrap">
+											<a href="#" class="inline-block refresh mr-15">
+												<i class="ion ion-md-radio-button-off"></i>
+											</a>
+											<a href="#" class="inline-block full-screen">
+												<i class="ion ion-md-expand"></i>
+											</a>
+										</div>
+									</h6>
+									<div class="card-body">
+										<div class="hk-legend-wrap mb-20">
+											<div class="hk-legend">
+												<span class="d-10 bg-purple rounded-circle d-inline-block"></span><span>Click Rate</span>
+											</div>
+											<div class="hk-legend">
+												<span class="d-10 bg-light-10 rounded-circle d-inline-block"></span><span>Impressions</span>
+											</div>
+										</div>
+										<div id="e_chart_5" class="echart" style="height: 194px;"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+									<div class="card">
+									<h6 class="card-header card-header-action">
+										Traffic Transaksi Penjualan Produk
+										<div class="d-flex align-items-center card-action-wrap">
+											<div class="inline-block dropdown">
+												<a class="dropdown-toggle no-caret" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="ion ion-ios-more"></i></a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Separated link</a>
+												</div>
+											</div>
+										</div>
+									</h6>
+									<div class="card-body">
+										<div class="hk-legend-wrap mb-20">
+											<div class="hk-legend">
+												<span class="d-10 bg-yellow rounded-circle d-inline-block"></span><span>Won Leads</span>
+											</div>
+											<div class="hk-legend">
+												<span class="d-10 bg-red rounded-circle d-inline-block"></span><span>Lost Leads</span>
+											</div>
+										</div>
+										<div id="e_chart_4" class="echart" style="height:194px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex align-items-center justify-content-between mt-40 mb-20">
+							<h4>Table Status</h4>
+							<button class="btn btn-sm btn-link">view all</button>
+						</div>
+						<div class="card">
+							<div class="card-body pa-0">
+								<div class="table-wrap">
+									<div class="table-responsive">
+										<table class="table table-sm table-hover mb-0">
+											<thead>
+												<tr>
+													<th>Pengirim</th>
+													<th>Kode Produk</th>
+													<th>Tujuan</th>
+													<th>Sal.Awal</th>
+													<th>Harga</th>
+													<th>Sal.Akhir</th>
+													<th>Keterangan</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Hamba Allah</td>
+													<td>Produk212</td>
+													<td>Langit Ke 7</td>
+													<td>300.000</td>
+													<td>30.000</td>
+													<td>270.000</td>
+													<td>Alhamdulillah </td>
+													<td>10 Nov 2018</td>
+												</tr>
+													<tr>
+														<td>Hamba Allah</td>
+														<td>Produk212</td>
+														<td>Langit Ke 7</td>
+														<td>300.000</td>
+														<td>30.000</td>
+														<td>270.000</td>
+														<td>Alhamdulillah </td>
+														<td>10 Nov 2018</td>
+													</tr>
+													<tr>
+														<td>Hamba Allah</td>
+														<td>Produk212</td>
+														<td>Langit Ke 7</td>
+														<td>300.000</td>
+														<td>30.000</td>
+														<td>270.000</td>
+														<td>Alhamdulillah </td>
+														<td>10 Nov 2018</td>
+													</tr>
+													<tr>
+														<td>Hamba Allah</td>
+														<td>Produk212</td>
+														<td>Langit Ke 7</td>
+														<td>300.000</td>
+														<td>30.000</td>
+														<td>270.000</td>
+														<td>Alhamdulillah </td>
+														<td>10 Nov 2018</td>
+													</tr>
+													<tr>
+														<td>Hamba Allah</td>
+														<td>Produk212</td>
+														<td>Langit Ke 7</td>
+														<td>300.000</td>
+														<td>30.000</td>
+														<td>270.000</td>
+														<td>Alhamdulillah </td>
+														<td>10 Nov 2018</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>
+                <!-- /Row -->
+            </div>
+            <div class="hk-footer-wrap container">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <p>Pampered by<a href="https://hencework.com/" class="text-dark" target="_blank">Hencework</a> © 2019</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="d-inline-block">Follow us</p>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-facebook"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-twitter"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-google-plus"></i></span></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+	</div>
+    <!-- /HK Wrapper -->
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JavaScript -->
+    <script src="custom/js/jquery.slimscroll.js"></script>
+
+    <!-- Fancy Dropdown JS -->
+    <script src="custom/js/dropdown-bootstrap-extended.js"></script>
+
+    <!-- FeatherIcons JavaScript -->
+    <script src="custom/js/feather.min.js"></script>
+
+    <!-- Toggles JavaScript -->
+    <script src="vendors/jquery-toggles/toggles.min.js"></script>
+    <script src="custom/js/toggle-data.js"></script>
+	
+	<!-- Toastr JS -->
+    
+	<!-- Counter Animation JavaScript -->
+	<script src="vendors/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="vendors/jquery.counterup/jquery.counterup.min.js"></script>
+	
+	
+	<!-- Easy pie chart JS -->
+    <script src="vendors/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+	
+	<!-- EChartJS JavaScript -->
+    <script src="vendors/echarts/dist/echarts-en.min.js"></script>
+    
+    <!-- Init JavaScript -->
+    <script src="custom/js/init.js"></script>
+	<script src="custom/js/dashboard2-data.js"></script>
+	<script src="custom/js/moment.min.js"></script>
+	<script src="custom/datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="custom/datepicker/locales/bootstrap-datepicker.id.min.js"></script>
+    <script>
+        $('#sandbox-container .input-append.date').datepicker({
+            todayBtn: "linked",
+            language: "id",
+            autoclose: true
+        });
+    </script>
+	
+</body>
+</html>

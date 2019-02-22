@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Webreport</title>
+    <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Toggles CSS -->
+    <link href="vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
+    <link href="vendors/jquery-toggles/css/themes/toggles-light.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="custom/css/style.css" rel="stylesheet" type="text/css">
+    <link href="custom/css/card.css" rel="stylesheet" type="text/css">
+    <link href="custom/css/ppob.css" rel="stylesheet" type="text/css">
+    <link href="custom/font/flaticon.css" rel="stylesheet" type="text/css">
+   
+</head>
+
+<body>
+    <!-- Preloader -->
+            <div class="preloader-it">
+                <div class="loader-pendulums"></div>
+            </div>
+            <div class="hk-wrapper hk-horizontal-nav">
+
+        <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
+                <a id="navbar_toggle_btn" class="navbar-toggle-btn nav-link-hover" href="javascript:void(0);"><span class="feather-icon"><i data-feather="menu"></i></span></a>
+                <a class="navbar-brand" href="#">
+                    <img class="brand-img d-inline-block" src="images/fm_web_report.png" alt="brand" />
+                </a>
+                <ul class="navbar-nav hk-navbar-content">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary">
+                            sisa saldo <span class="badge">Rp. 500.000</span>
+                        </button> 
+                    </li>
+                </ul>
+            </nav>
+            <!-- /Top Navbar -->
+    
+            <!--Horizontal Nav-->
+            <nav class="hk-nav hk-nav-dark">
+                <a href="javascript:void(0);" id="hk_nav_close" class="hk-nav-close"><span class="feather-icon"><i data-feather="x"></i></span></a>
+                <div class="nicescroll-bar">
+                    <div class="navbar-nav-wrap">
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item">
+                                <a class="nav-link link-with-badge" href="index.html">
+                                    <span class="feather-icon"><i data-feather="archive"></i></span>
+                                    <span class="nav-link-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-with-badge" href="ppob.html">
+                                    <span class="feather-icon"><i data-feather="server"></i></span>
+                                    <span class="nav-link-text">PPOB</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-with-badge" href="Ticket.html">
+                                    <span class="feather-icon"><i data-feather="file-text"></i></span>
+                                    <span class="nav-link-text">Ticket</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-with-badge" href="voucher.html">
+                                    <span class="feather-icon"><i data-feather="gift"></i></span>
+                                    <span class="nav-link-text">Voucher</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-with-badge" href="voucher.html">
+                                    <span class="feather-icon"><i data-feather="power"></i></span>
+                                    <span class="nav-link-text">Keluar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--/Horizontal Nav-->
+
+
+
+            <div class="hk-pg-wrapper">
+                <div class="container-fluid biru">
+                    <div class="row">
+                        <div class="col-xl-12 mt-50">
+                            <div class="profile-cover-wrap">
+                                <div class="profile-cover-img" style="background-image:url('images/b.png')"></div>
+                                <div class="bg-overlay bg-trans-dark-30"></div>
+                                <div class="container profile-cover-content py-150"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nav nya nih
+                    ============================================= -->
+                <div class="container">
+                    <div class="hk-pg-header">
+                        <h2 class="hk-pg-title"><span class="pg-title-icon"><span class="feather-icon"><i data-feather="server"></i></span></span>Voucher & Gift Card</h2>
+                    </div>
+                    <div class="ui six cards">
+                        <a class="red card" data-toggle="modal" data-target="#bk">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/bk.png">
+                            </div>
+                        </a>
+                        <a class="orange card" data-toggle="modal" data-target="#bl">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/breadlife.png">
+                            </div>
+                        </a>
+                        <a class="green card" data-toggle="modal" data-target="#es77">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/es77.png">
+                            </div>
+                        </a>
+                        <a class="blue card"data-toggle="modal" data-target="#xls">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/exelso.png">
+                            </div>
+                        </a>
+                        <a class="purple card"data-toggle="modal" data-target="#gwt">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/go!wet.png">
+                            </div>
+                        </a>
+                        <a class="yellow card"data-toggle="modal" data-target="#hop">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/hophop.png">
+                            </div>
+                        </a>
+                        <a class="yellow card"data-toggle="modal" data-target="#inl">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/inul_vizta.png">
+                            </div>
+                        </a>
+                        <a class="red card"data-toggle="modal" data-target="#its">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/itasuki.png">
+                            </div>
+                        </a>
+                        <a class="red card"data-toggle="modal" data-target="#kfc">
+                            <div class="image">
+                                    <img src="images/Logo Voucher Deals/kfc.png">
+                            </div>
+                        </a>
+                        <a class="pink card"data-toggle="modal" data-target="#lot">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/lotteria.png">
+                            </div>
+                        </a>
+                        <a class="blue card"data-toggle="modal" data-target="#snw">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/snowbay.png">
+                            </div>
+                        </a>
+                        <a class="black card"data-toggle="modal" data-target="#tlj">
+                            <div class="image">
+                                <img src="images/Logo Voucher Deals/tlj.png">
+                            </div>
+                        </a>
+                    </div>
+                </div>	
+            </div>
+            
+            <!-- /isi modal -->
+            <div class="modal fade" id="bk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bk">Burger King</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/bk.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R) </option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                                <div class="detail-harga mt-20">
+                                                    <h6>Harga</h6>
+                                                    <h4>Rp 50.000</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="bl" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bl">Bread Life</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/breadlife.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="es77" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="es77">Es Teler 77</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/es77.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="xls" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="xls">Excelso</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/exelso.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gwt" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="gwt">Go!Wet</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/go!wet.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="hop" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="hop">Hop Hop</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/hophop.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="inl" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="hop">Inul Vizta</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/inul_vizta.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="its" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="its">Itasuki</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/itasuki.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="kfc" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="kfc">KFC</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/kfc.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="lot" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="lot">lotteria</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/lotteria.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="snw" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="snw">lotteria</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/snowbay.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="tlj" tabindex="-1" role="dialog" aria-labelledby="bl" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tlj">Tous ics Jours</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <img class="mr-4" src="images/Logo Voucher Deals/tlj.png" alt="Generic placeholder image">
+                                        <div class="media-body">
+                                            <p>KFC merupakan restoran cepat saji yang menyediakan ayam goreng serta berbagai menu pilihan lainnya seperti burger, sup, dan salad. Dengan rasa yang renyah dan gurih, siapa pun dijamin ketagihan dengan ayam goreng yang satu ini. Mau menikmati berbagai menu dari si "Jagonya Ayam" dengan lebih hemat? Beli vouchernya di Tokopedia aja!</p>
+                                            <div class="card border-succes mt-10">
+                                                <div class="card-body text-success">
+                                                    <h6 class="card-title text-success">Keterangan</h6>
+                                                    <p>Voucher ini berlaku hingga 29 hari setelah pembelian.</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Product</option>
+                                                    <option>Mushroom Swiss + BBQ Beefrasher + Fries (R)</option>
+                                                    <option>Crispy TC + KCF + Mozza King Chicken Fillet</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Bayar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Container -->
+
+            <!-- Footer -->
+            <div class="hk-footer-wrap container">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <p><a href="https://hencework.com/">Flash Machine</a> ©  2018 All Rights Reserved</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="d-inline-block">Follow us</p>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-facebook"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-twitter"></i></span></a>
+                            <a href="#" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="fa fa-google-plus"></i></span></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+   <!-- /HK Wrapper -->
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JavaScript -->
+    <script src="custom/js/jquery.slimscroll.js"></script>
+
+    <!-- Fancy Dropdown JS -->
+    <script src="custom/js/dropdown-bootstrap-extended.js"></script>
+
+    <!-- FeatherIcons JavaScript -->
+    <script src="custom/js/feather.min.js"></script>
+	
+	
+	<!-- Owl JavaScript -->
+    <script src="vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <!-- Owl Init JavaScript -->
+    <script src="custom/js/owl-data.js"></script>
+	
+    <!-- Toggles JavaScript -->
+    <script src="vendors/jquery-toggles/toggles.min.js"></script>
+    <script src="custom/js/toggle-data.js"></script>
+
+    <!-- Init JavaScript -->
+    <script src="custom/js/init.js"></script>
+    
+
+</body>
+
+
+<!-- Mirrored from hencework.com/theme/pangong/modern/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Dec 2018 07:23:03 GMT -->
+</html>

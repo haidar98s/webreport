@@ -1,0 +1,99 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 27/12/2018 04:10
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-smartphone-call:before { content: "\f100"; }
+.flaticon-cell-phone:before { content: "\f101"; }
+.flaticon-hand-graving-smartphone:before { content: "\f102"; }
+.flaticon-gamepad-controller:before { content: "\f103"; }
+.flaticon-gamepad-console:before { content: "\f104"; }
+.flaticon-controler:before { content: "\f105"; }
+.flaticon-lightbulb:before { content: "\f106"; }
+.flaticon-lightbulb-1:before { content: "\f107"; }
+.flaticon-lightbulb-2:before { content: "\f108"; }
+.flaticon-water-drop:before { content: "\f109"; }
+.flaticon-tint-drop:before { content: "\f10a"; }
+.flaticon-faucet:before { content: "\f10b"; }
+.flaticon-money:before { content: "\f10c"; }
+.flaticon-satellite:before { content: "\f10d"; }
+.flaticon-satellite-dish:before { content: "\f10e"; }
+.flaticon-satellite-dish-1:before { content: "\f10f"; }
+.flaticon-medical-kit:before { content: "\f110"; }
+.flaticon-old-typical-phone:before { content: "\f111"; }
+.flaticon-scooter:before { content: "\f112"; }
+.flaticon-motorcycle-side-view:before { content: "\f113"; }
+.flaticon-motorcycle:before { content: "\f114"; }
+.flaticon-money-1:before { content: "\f115"; }
+.flaticon-black-plane:before { content: "\f116"; }
+.flaticon-airplane-shape:before { content: "\f117"; }
+.flaticon-train-front:before { content: "\f118"; }
+.flaticon-coupon:before { content: "\f119"; }
+.flaticon-coupon-1:before { content: "\f11a"; }
+.flaticon-tv:before { content: "\f11b"; }
+.flaticon-smart-tv:before { content: "\f11c"; }
+.flaticon-hotel-with-three-floors:before { content: "\f11d"; }
+    
+    $font-Flaticon-smartphone-call: "\f100";
+    $font-Flaticon-cell-phone: "\f101";
+    $font-Flaticon-hand-graving-smartphone: "\f102";
+    $font-Flaticon-gamepad-controller: "\f103";
+    $font-Flaticon-gamepad-console: "\f104";
+    $font-Flaticon-controler: "\f105";
+    $font-Flaticon-lightbulb: "\f106";
+    $font-Flaticon-lightbulb-1: "\f107";
+    $font-Flaticon-lightbulb-2: "\f108";
+    $font-Flaticon-water-drop: "\f109";
+    $font-Flaticon-tint-drop: "\f10a";
+    $font-Flaticon-faucet: "\f10b";
+    $font-Flaticon-money: "\f10c";
+    $font-Flaticon-satellite: "\f10d";
+    $font-Flaticon-satellite-dish: "\f10e";
+    $font-Flaticon-satellite-dish-1: "\f10f";
+    $font-Flaticon-medical-kit: "\f110";
+    $font-Flaticon-old-typical-phone: "\f111";
+    $font-Flaticon-scooter: "\f112";
+    $font-Flaticon-motorcycle-side-view: "\f113";
+    $font-Flaticon-motorcycle: "\f114";
+    $font-Flaticon-money-1: "\f115";
+    $font-Flaticon-black-plane: "\f116";
+    $font-Flaticon-airplane-shape: "\f117";
+    $font-Flaticon-train-front: "\f118";
+    $font-Flaticon-coupon: "\f119";
+    $font-Flaticon-coupon-1: "\f11a";
+    $font-Flaticon-tv: "\f11b";
+    $font-Flaticon-smart-tv: "\f11c";
+    $font-Flaticon-hotel-with-three-floors: "\f11d";
